@@ -250,6 +250,17 @@ body {
     height: 300px;
 }
 
+.cloud-background {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    opacity: 0.3;
+    z-index: 1;
+}
+
 .cloud {
     position: absolute;
     width: 80px;
@@ -261,6 +272,7 @@ body {
     font-size: 2rem;
     color: white;
     animation: float 6s ease-in-out infinite;
+    z-index: 2;
 }
 
 .aws-cloud {
