@@ -106,15 +106,25 @@ body {
 .nav-contact {
     display: flex;
     align-items: center;
-    gap: 8px;
+    justify-content: center;
     color: var(--text-secondary);
     font-size: 0.9rem;
     font-weight: 500;
+    padding: 8px 12px;
+    background: rgba(66, 133, 244, 0.1);
+    border-radius: 8px;
+    border: 1px solid rgba(66, 133, 244, 0.2);
+    transition: all 0.3s ease;
+}
+
+.nav-contact:hover {
+    background: rgba(66, 133, 244, 0.2);
+    transform: translateY(-2px);
 }
 
 .nav-contact i {
     color: var(--gcp-blue);
-    font-size: 1.1rem;
+    font-size: 1.5rem;
 }
 
 /* Hero Section */
