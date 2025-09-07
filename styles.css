@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
     color: #333;
     overflow-x: hidden;
@@ -106,17 +106,15 @@ body {
 .nav-contact {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
     color: var(--text-secondary);
     font-size: 0.9rem;
+    font-weight: 500;
 }
 
-.availability {
-    background: var(--gradient-gcp);
-    color: white;
-    padding: 4px 8px;
-    border-radius: 12px;
-    font-size: 0.8rem;
+.nav-contact i {
+    color: var(--gcp-blue);
+    font-size: 1.1rem;
 }
 
 /* Hero Section */
