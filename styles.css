@@ -106,37 +106,17 @@ body {
 .nav-contact {
     display: flex;
     align-items: center;
-    justify-content: center;
+}
+
+.contact-link {
     color: var(--text-secondary);
-    font-size: 0.9rem;
+    text-decoration: none;
     font-weight: 500;
-    padding: 8px 12px;
-    background: rgba(66, 133, 244, 0.1);
-    border-radius: 8px;
-    border: 1px solid rgba(66, 133, 244, 0.2);
-    transition: all 0.3s ease;
+    transition: color 0.3s ease;
 }
 
-.nav-contact:hover {
-    background: rgba(66, 133, 244, 0.2);
-    transform: translateY(-2px);
-}
-
-.nav-contact i {
-    color: var(--gcp-blue);
-    font-size: 1.5rem;
-}
-
-.nav-contact img {
-    width: 24px;
-    height: 24px;
-    opacity: 0.9;
-    transition: all 0.3s ease;
-}
-
-.nav-contact:hover img {
-    opacity: 1;
-    transform: scale(1.1);
+.contact-link:hover {
+    color: var(--text-primary);
 }
 
 /* Hero Section */
@@ -242,23 +222,36 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-illustration {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-bg-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    opacity: 0.4;
+    filter: brightness(1.2);
 }
 
 .cloud-animation {
     position: relative;
     width: 300px;
     height: 300px;
-}
-
-.cloud-background {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 200px;
-    height: 200px;
-    opacity: 0.3;
-    z-index: 1;
+    z-index: 2;
 }
 
 .cloud {
