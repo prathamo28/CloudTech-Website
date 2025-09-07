@@ -128,8 +128,9 @@ body {
 }
 
 .nav-contact img {
-    filter: brightness(0) invert(1);
-    opacity: 0.8;
+    width: 24px;
+    height: 24px;
+    opacity: 0.9;
     transition: all 0.3s ease;
 }
 
